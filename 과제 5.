@@ -1,0 +1,62 @@
+# calculator.py.
+#오류 고치는 중!!
+과제5_계산기함수
+
+#사칙연산 함수로 만들기
+def sum(a,b):
+    return a+b
+
+def sub(a,b):
+    return a-b
+
+def mul(a,b):
+    return a*b
+
+def div(a,b):
+    return a/b
+
+
+
+
+while True:
+    qes = input("원하는 계산식 입력: ")
+
+띄어쓰는 기능
+space_qes = qes.split()
+
+    if space_qes[0] == "c" or space_qes[0] == "C":
+        print("다시 입력")
+        continue
+
+    if space_qes[0] == "e" or space_qes[0] == "E":
+        print("계산기 종료")
+        break
+
+    if space_qes[1] == "+":
+        numA = int(space_qes[0])
+        numB = int(space_qes[2])
+        answer = sum(numA, numB)
+        print(qes + " = %d"%answer)
+
+    if space_qes[1] == "-":
+        numA = int(space_qes[0])
+        numB = int(space_qes[2])
+        answer = sub(numA, numB)
+        print(qes + " = %d"%answer)
+
+    if space_qes[1] == "*":
+        numA = int(space_qes[0])
+        numB = int(space_qes[2])
+        answer = mul(numA, numB)
+        print(qes + " = %d"%answer)
+
+    if space_qes[1] == "/":
+        numA = int(space_qes[0])
+        numB = int(space_qes[2])
+        answer = div(numA, numB)
+        print(qes + " = %d"%answer)
+
+         pront(qes="="=answer)
+
+print("번호")
+print(q+"="+a)
